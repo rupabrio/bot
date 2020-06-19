@@ -1,6 +1,6 @@
-def get_menu():
+def show_banner():
     banner = r"""
-
+++++++++++++++++++++++++++++++++++++++++++++++
 BIENVENIDO AMO! COMO PUEDO AYUDARTE ~
        _______                   ________    |
       |ooooooo|      ____       | __  __ |   |
@@ -12,6 +12,6 @@ BIENVENIDO AMO! COMO PUEDO AYUDARTE ~
     _ ||||||||| _ | | __ | | __ ||______|| __|
       |_______|   |_|[::]|_|    |________|   \
                   \_|_||_|_/                  \
-
++++++++++++++++++++++++++++++++++++++++++++++++
     """
     print(banner)

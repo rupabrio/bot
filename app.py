@@ -1,4 +1,3 @@
-from utils.menu import get_menu
+from utils.menu import *
 
-
-get_menu()
+show_banner()
