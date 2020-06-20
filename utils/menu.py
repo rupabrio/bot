@@ -9,7 +9,7 @@ def show_banner():
 
     banner = r"""
 ++++++++++++++++++++++++++++++++++++++++++++++
-BIENVENIDO AMO! COMO PUEDO AYUDARTE ~
+WELCOME MASTER, WHAT IS YOUR BIDDING         ~
        _______                   ________    |
       |ooooooo|      ____       | __  __ |   |
       |[]+++[]|     [____]      |/  \/  \|   |
