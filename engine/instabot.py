@@ -30,6 +30,11 @@ class Bot:
 			.click()
 
 
+	def busqueda(self):\
+		self.driver.find_element_by_name('Search')\
+			.send_keys('rubebriceno')
+
+
 	def entrar(self):
 		self.navegar()
 		sleep(5)

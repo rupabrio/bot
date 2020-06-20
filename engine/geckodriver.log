@@ -121,3 +121,5 @@ console.error: "Store does not have a valid reducer. Make sure the argument pass
 1592624145154	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilei9SKQl"
 1592624150609	Marionette	INFO	Listening on port 40057
 1592624150630	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
