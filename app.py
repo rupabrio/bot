@@ -15,9 +15,7 @@ if __name__ == '__main__':
     input("GO?")
 
     #Bot instance
-    uname = input("username=> ")
-    pw = getpass.getpass("passwd=> ")
-    my_bot = bots.Bot(uname, pw)
+    my_bot = bots.Bot("", "")
 
     #Menu loop
     while True:
@@ -27,7 +25,11 @@ if __name__ == '__main__':
             print("Not valid")
             continue
         elif option == "1":
+            uname = input("username=> ")
+            pw = getpass.getpass("passwd=> ")
             try:
+                my_bot.user = uname
+                my_bot.pw = pw
                 my_bot.enter()
             except:
                 print("Oops something happened!")
