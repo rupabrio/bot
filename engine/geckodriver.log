@@ -121,6 +121,7 @@ console.error: "Store does not have a valid reducer. Make sure the argument pass
 1592624145154	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilei9SKQl"
 1592624150609	Marionette	INFO	Listening on port 40057
 1592624150630	Marionette	WARN	TLS certificate errors will be ignored for this session
+<<<<<<< HEAD
 1592626720044	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\crsdp\\AppData\\Local\\Temp\\rust_mozprofile2AHJKD"
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 1592626722853	Marionette	INFO	Listening on port 57124
@@ -132,3 +133,7 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+=======
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+>>>>>>> d95fb544ffddc79290d2899c8a8a1b41d95b6299
