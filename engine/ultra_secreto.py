@@ -1,2 +1,2 @@
-usuario = ''
-clave = ''
+usuario = 'kaimankilla'
+clave = 'XxX#123'
