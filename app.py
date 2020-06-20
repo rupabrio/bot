@@ -2,9 +2,9 @@ from sys import argv
 
 from utils.menu import *
 
-from engine import instabot
+from engine import bots
 
-mi_objetivo_de_clase = Bot()
+mi_objetivo_de_clase = bots.Bot()
 
 if __name__ == '__main__':
     # Menu de entrada
