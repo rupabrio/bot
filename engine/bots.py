@@ -38,3 +38,6 @@ class Bot:
         finally:
             print("Successfully logged in")
             sleep(randint(4, 6))
+
+    def exit(self):
+        self.driver.close()
