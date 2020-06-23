@@ -39,5 +39,8 @@ class Bot:
             print("Successfully logged in")
             sleep(randint(4, 6))
 
+   def likes(self): #Auto-likes en fotos random
+	
+
     def exit(self):
         self.driver.close()
