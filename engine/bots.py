@@ -39,6 +39,7 @@ class Bot:
         finally:
             print("Successfully logged in")
             sleep(randint(4, 6))
+<<<<<<< HEAD
         
     def log_out(self):
         self.driver.find_element_by_xpath('/html/body/div[1]/section/main/section/div[3]/div[1]/div/div[2]/div[1]/a')\
@@ -54,6 +55,9 @@ class Bot:
 	#try buscar boton de like y darle click
 	#execept print un error no se pudo dar like
 	#finally return True or False si fallo
+=======
+
+>>>>>>> 3bf03c6e6669e8cc2c8c66651d394c5ccaa39702
     def exit(self):
         self.log_out()
         sleep(3)
