@@ -2,6 +2,7 @@ from time import sleep
 from selenium import webdriver
 from random import randint
 
+
 class Bot:
     def __init__(self, user, password):
         self.user = user
@@ -37,9 +38,6 @@ class Bot:
         finally:
             print("Successfully logged in")
             sleep(randint(4, 6))
-
-   def likes(self): #Auto-likes en fotos random
-	
 
     def exit(self):
         self.driver.close()
