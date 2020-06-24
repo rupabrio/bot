@@ -2,7 +2,6 @@ from time import sleep
 from selenium import webdriver
 from random import randint
 
-
 class Bot:
     def __init__(self, user, password):
         self.user = user
