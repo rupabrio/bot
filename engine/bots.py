@@ -25,6 +25,7 @@ class Bot:
         sleep(randint(4, 6))
         self.driver.find_element_by_xpath('/html/body/div[1]/section/main/div/div/div/div/button')\
             .click()
+        sleep(3)
         self.driver.find_element_by_xpath('/html/body/div[4]/div/div/div/div[3]/button[2]')\
             .click()
 
@@ -38,9 +39,26 @@ class Bot:
         finally:
             print("Successfully logged in")
             sleep(randint(4, 6))
-
-   def likes(self): #Auto-likes en fotos random
-	
-
+        
+    def log_out(self):
+        self.driver.find_element_by_xpath('/html/body/div[1]/section/main/section/div[3]/div[1]/div/div[2]/div[1]/a')\
+            .click()
+        sleep(3)  
+        self.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/header/section/div[1]/div/button")\
+            .click()
+        sleep(3)
+        self.driver.find_element_by_xpath('/html/body/div[4]/div/div/div/div/button[9]')\
+            .click()        
+    #def like(self, url):
+	#navegar a la foto
+	#try buscar boton de like y darle click
+	#execept print un error no se pudo dar like
+	#finally return True or False si fallo
     def exit(self):
+        self.log_out()
+        sleep(3)
         self.driver.close()
+	#navegar a perfil de usario
+	#dar click en el boton de opciones
+	#dar click en log out
+
