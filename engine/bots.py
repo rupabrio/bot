@@ -29,8 +29,8 @@ class Bot:
         sleep(randint(4, 6))
         self.driver.find_element_by_xpath('/html/body/div[1]/section/main/div/div/div/div/button')\
             .click()
-        sleep(randint(4, 6))
-        self.driver.find_element_by_xpath('/html/body/div[4]/div/div/div/div[3]/button[2]')\
+        sleep(randint(5, 6))
+        self.driver.find_element_by_xpath('/html/body/div[3]/div/div/div/div[3]/button[2]')\
             .click()
 
     def enter(self):
@@ -45,6 +45,8 @@ class Bot:
             sleep(randint(4, 6))
 
     def log_out(self):
+        self.driver.get("https://www.instagram.com")
+        sleep(2)
         self.driver.find_element_by_xpath('/html/body/div[1]/section/main/section/div[3]/div[1]/div/div[2]/div[1]/a')\
             .click()
         sleep(randint(4, 6))
@@ -77,5 +79,5 @@ class Bot:
 
     def exit(self):
         self.log_out()
-        sleep(randint(4, 6))
+        sleep(randint(6, 6))
         self.driver.close()
