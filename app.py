@@ -14,10 +14,10 @@ if __name__ == '__main__':
     print("Press Enter to Start Bot, Press CTR C to cancel")
     input("GO?")
 
-    #Bot instance
+    # Bot instance
     my_bot = bots.Bot("", "")
 
-    #Menu loop
+    # Menu loop
     while True:
         print(menu)
         option = input("=> ")

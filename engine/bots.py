@@ -8,7 +8,7 @@ class Bot:
         self.user = user
         self.pw = password
         self.driver = webdriver.Firefox()
-        self.mouth = "Can't talk"
+        self.mouth = "Can't talk yet"
 
     def logfile(self, to_log):
         with open('./logs.txt', 'a') as f:
@@ -29,7 +29,7 @@ class Bot:
         sleep(randint(4, 6))
         self.driver.find_element_by_xpath('/html/body/div[1]/section/main/div/div/div/div/button')\
             .click()
-        sleep(3)
+        sleep(randint(4, 6))
         self.driver.find_element_by_xpath('/html/body/div[4]/div/div/div/div[3]/button[2]')\
             .click()
 
@@ -47,10 +47,10 @@ class Bot:
     def log_out(self):
         self.driver.find_element_by_xpath('/html/body/div[1]/section/main/section/div[3]/div[1]/div/div[2]/div[1]/a')\
             .click()
-        sleep(3)
+        sleep(randint(4, 6))
         self.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/header/section/div[1]/div/button")\
             .click()
-        sleep(3)
+        sleep(randint(4, 6))
         self.driver.find_element_by_xpath('/html/body/div[4]/div/div/div/div/button[9]')\
             .click()
 
@@ -77,5 +77,5 @@ class Bot:
 
     def exit(self):
         self.log_out()
-        sleep(3)
+        sleep(randint(4, 6))
         self.driver.close()
