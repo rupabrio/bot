@@ -10,6 +10,10 @@ class Bot:
         self.driver = webdriver.Firefox()
         self.mouth = "Can't talk"
 
+    def logfile(self, to_log):
+        with open('./logs.txt', 'a') as f:
+            f.write(f"{to_log}\n")
+
     def go_to(self, default="https://www.instagram.com/", user=""):
         self.driver.get(default + user)
         sleep(randint(4, 6))
@@ -50,11 +54,26 @@ class Bot:
         self.driver.find_element_by_xpath('/html/body/div[4]/div/div/div/div/button[9]')\
             .click()
 
-    # def like(self, url):
-        # navegar a la foto
-        # try buscar boton de like y darle click
-        # execept print un error no se pudo dar like
-        # finally return True or False si fallo
+    def go_to_post(self, post_id):
+        sleep(randint(4, 6))
+        self.driver.get(f"https://www.instagram.com/p/{post_id}")
+
+    def like(self):
+        sleep(randint(4, 6))
+        self.driver.find_element_by_xpath('/html/body/div[4]/div[2]/div/article/div[2]/section[1]/span[1]/button/svg')\
+            .click()
+
+    def like_post(self, post_id):
+        try:
+            self.go_to_post(post_id)
+            self.like()
+            self.logfile(f"{post_id} liked")
+        except:
+            self.logfile(f"{post_id} not liked")
+
+    def like_posts(self, post_list):
+        for post_id in post_list:
+            like_post(post_id)
 
     def exit(self):
         self.log_out()
