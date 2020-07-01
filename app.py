@@ -21,7 +21,7 @@ if __name__ == '__main__':
     while True:
         print(menu)
         option = input("=> ")
-        if option not in ["1", "2", "3"]:
+        if option not in ["1", "2", "3","4"]:
             print("Not valid")
             continue
         elif option == "1":
@@ -42,3 +42,7 @@ if __name__ == '__main__':
             print("Goodbye")
             my_bot.exit()
             break
+        elif option == "4":
+            print("Like button")
+            my_bot.like()
+            pass
